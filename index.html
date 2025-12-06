@@ -2,114 +2,123 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    
-    , initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
 </head>
-<body width="10" height="100">
-    <form action="success.html" method="post">
 
-     <center>
-       <img src="saylani_logo-removebg-preview.png" class="logo">
+<body>
 
-        
-        <h1>Saylani Online Academy</h1>
-        <br><br>
-      <form action="">
-        <table bgcolor= "lightgrey">
+<center>
+
+    <img src="saylani_logo-removebg-preview.png" class="logo">
+
+    <h1>Saylani Online Academy</h1>
+    <br><br>
+
+    <!-- Only ONE form -->
+    <form action="success.html" method="GET">
+
+        <table bgcolor="lightgrey">
             <tr>
-                <td colspan="2" align="center">Student Registration Form</td>
-            </tr>
-            <tr>
-                <td><Label>Name:</Label></td>
-                <td><input type="text" placeholder="Enter Your Name" size="40" name="UserName" style="width: 200px; height: 25px;" required  /></td>
-            </tr>
-             <tr>
-                <td><Label>Father Name:&emsp;</Label></td>
-                <td><input type="text" placeholder="Enter Your Father Name" size="40" name="UserName" style="width: 200px; height: 25px;" required  /></td>
-            </tr>
-            <tr>
-                <td><label>Password:&emsp;</label></td>
-                <td><input type="password" placeholder="Enter Your Password" size="40" name="userpassword" style="width: 200px; height: 25px;" required  /></td>
-            </tr>
-            
-            <tr>
-                <td><label>Address:</label></td>
-                <td><textarea name="" id="" rows="10" cols="30" placeholder="Address" ></textarea></td>
+                <td colspan="2" align="center"><b>Student Registration Form</b></td>
             </tr>
 
-            
             <tr>
-                <td><Label>Gender</Label></td>
+                <td>Name:</td>
+                <td><input type="text" placeholder="Enter Your Name" required style="width:200px; height:25px;"></td>
+            </tr>
+
+            <tr>
+                <td>Father Name:</td>
+                <td><input type="text" placeholder="Enter Your Father Name" required style="width:200px; height:25px;"></td>
+            </tr>
+
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" placeholder="Enter Your Password" required style="width:200px; height:25px;"></td>
+            </tr>
+
+            <tr>
+                <td>Address:</td>
+                <td><textarea rows="5" cols="30" placeholder="Address"></textarea></td>
+            </tr>
+
+            <tr>
+                <td>Gender:</td>
                 <td>
-                    <input type="radio" name="" id="">Male
-                    <input type="radio" name="" id="">Female
+                    <input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Female
                 </td>
             </tr>
-             <tr>
-                <td><Label>Language</Label></td>
-                <td>
-                    <input type="checkbox" name="" id="">Urdu
-                    <input type="checkbox" name="" id="">English
-                    <input type="checkbox" name="" id="">Arabic
-                    <input type="checkbox" name="" id="">Chinese
 
+            <tr>
+                <td>Language:</td>
+                <td>
+                    <input type="checkbox">Urdu
+                    <input type="checkbox">English
+                    <input type="checkbox">Arabic
+                    <input type="checkbox">Chinese
                 </td>
             </tr>
+
             <tr>
-                <td><label for="">Date of birth</label></td>
+                <td>Date of birth:</td>
+                <td><input type="date"></td>
+            </tr>
+
+            <tr>
+                <td>Email ID:</td>
+                <td><input type="email" placeholder="Enter Your Email" required style="width:200px; height:25px;"></td>
+            </tr>
+
+            <tr>
+                <td>Mobile Number:</td>
+                <td><input type="number" placeholder="Enter Your Mobile Number" required style="width:200px; height:25px;"></td>
+            </tr>
+
+            <tr>
+                <td>Country:</td>
                 <td>
-                    <input type="date" name="" id="">
+                    <select style="width:200px; height:25px;">
+                        <option selected disabled>Select Country</option>
+                        <option>PAKISTAN</option>
+                        <option>CHINA</option>
+                        <option>INDIA</option>
+                        <option>IRAN</option>
+                        <option>IRAQ</option>
+                    </select>
                 </td>
             </tr>
-            <tr>
-                <td><label>Email ID:</label></td>
-                <td><input type="email"minlength="5" maxlength="15" placeholder="Enter Your Email" name="useremail" style="width: 200px; height: 25px;" required  /></td>
-            </tr>
-            <tr>
-                <td><label>Mobile Number:</label></td>
-                <td><input type="number"minlength="5" maxlength="15" placeholder="Enter Your Mobile Number" size="40"name="usernumber" style="width: 200px; height: 25px;"required  /></td>
-            </tr>
-            <tr>
-                <td><label>Country:</label></td>
-                <td><select name="" id="" size="1" style="width: 200px; height: 25px;">
-            <option LABEL="Select Country" disabled selected>Select Country</option>
-            <option value="">PAKISTAN</option>
-             <option value="">CHINA</option>
-              <option value="">INDIA</option>
-               <option value="">IRAN</option>
-                <option value="">IRAQ</option>
 
-        </select></td>
-            </tr>
             <tr>
-                <td><label>Hobbies:</label></td>
-                <td><select name="" id="" size="1" style="width: 200px; height: 25px;">
-            <option LABEL="Hobbies" disabled selected>Hobbies</option>
-            <option value="">CRICKET</option>
-             <option value="">RIDING</option>
-              <option value="">BOXING</option>
-               <option value="">READING</option>
-                <option value="">GYM</option>
-
-        </select></td>
+                <td>Hobbies:</td>
+                <td>
+                    <select style="width:200px; height:25px;">
+                        <option selected disabled>Hobbies</option>
+                        <option>CRICKET</option>
+                        <option>RIDING</option>
+                        <option>BOXING</option>
+                        <option>READING</option>
+                        <option>GYM</option>
+                    </select>
+                </td>
             </tr>
-              <tr>
-                
-                <td><label>Choose File:</label></td>
-                    
-                <td><input type="file" accept="image/*"/></td>
-              </tr>
-              <tr>
-                <td><label></label></td>
+
+            <tr>
+                <td>Choose File:</td>
+                <td><input type="file" accept="image/*"></td>
+            </tr>
+
+            <tr>
+                <td></td>
                 <td><input type="submit" value="Submit Form"></td>
-              </tr>
+            </tr>
+
         </table>
-      </form>
-    </center>
-    
+
+    </form>
+
+</center>
+
 </body>
 </html>
-
-
